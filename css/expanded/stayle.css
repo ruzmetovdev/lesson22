@@ -1,0 +1,363 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+aside {
+  position: fixed;
+  top: 65px;
+  display: none;
+  height: 100vh;
+  overflow: scroll;
+}
+
+aside::-webkit-scrollbar {
+  width: 5 px;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #c2ccdb;
+  border-radius: 5px;
+}
+
+aside::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+
+header {
+  position: fixed;
+  height: 65px;
+  width: 100%;
+}
+
+main {
+  position: fixed;
+  width: 100vw;
+  top: 60px;
+  height: calc(100vh - 65px);
+  overflow: scroll;
+  padding: 20px;
+  z-index: -1;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  padding-left: 15px;
+  padding-right: 16px;
+}
+
+.nav-item {
+  text-align: center;
+  background-color: #f9fbfd;
+  padding: 30px 0;
+  border: none;
+}
+
+.nav-item:hover {
+  background-color: #e8e9eb;
+}
+
+.uil {
+  color: #869ab8;
+  font-size: 20px;
+}
+
+.spn {
+  color: #869ab8;
+  font-size: 13px;
+}
+
+.logo {
+  background-color: #315fe9;
+  color: white;
+  font-size: 20px;
+  width: 235px;
+  padding: 15px;
+  margin: -10px;
+}
+.logo i {
+  color: white;
+  border-radius: 50%;
+  padding: 7px 8px;
+  font-size: 15px;
+  background-color: rgba(21, 71, 222, 0.95);
+}
+
+.right {
+  display: flex;
+}
+
+.right img {
+  margin-right: -10px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@media (min-width: 1000px) {
+  main {
+    width: calc(100vw - 250px);
+    left: 250px;
+  }
+  aside {
+    width: 250px;
+    display: block;
+  }
+}
+main::-webkit-scrollbar {
+  width: 10px;
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: #c2ccdb;
+  border-radius: 5px;
+}
+
+main::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+}
+
+main .row .ras1 {
+  position: relative;
+  background: url(/imges/rasm.png) center;
+  background-size: cover;
+}
+
+main .row .ras1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-image 0.5s;
+}
+
+main .row .ras1:hover {
+  background-size: 110%;
+}
+
+main .row .ras2 {
+  background: url(/imges/r3.png) center;
+  background-size: cover;
+}
+
+main .row .ras2:hover {
+  background-size: 110%;
+}
+
+main .row .ras3 {
+  background: url(/imges/r4.png) center;
+  background-size: cover;
+}
+
+main .row .ras3:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras4 {
+  background: url(/imges/r6.png) center;
+  background-size: cover;
+}
+
+main .row .ras4:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras5 {
+  background: url(/imges/r9.png) no-repeat center;
+  background-size: cover;
+}
+
+main .row .ras5:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras6 {
+  background: url(/imges/r10.png) center;
+  background-size: cover;
+}
+
+main .row .ras6:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras7 {
+  background: url(/imges/r11.jpg) center;
+  background-size: cover;
+}
+
+main .row .ras7:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras8 {
+  background: url(/imges/r12.jpg) center;
+  background-size: cover;
+}
+
+main .row .ras8:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras9 {
+  background: url(/imges/r14.jpg) center;
+  background-size: cover;
+}
+
+main .row .ras9:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras10 {
+  background: url(/imges/r15.png) center;
+  background-size: cover;
+}
+
+main .row .ras10:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras11 {
+  background: url(/imges/r16.png) center;
+  background-size: cover;
+}
+
+main .row .ras11:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras12 {
+  background: url(/imges/r6.png) center;
+  background-size: cover;
+}
+
+main .row .ras12:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras13 {
+  background: url(/imges/r7.png) center;
+  background-size: cover;
+}
+
+main .row .ras13:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras14 {
+  background: url(/imges/r6.png) center;
+  background-size: cover;
+}
+
+main .row .ras14:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras15 {
+  background: url(/imges/r11.jpg) center;
+  background-size: cover;
+}
+
+main .row .ras15:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .ras16 {
+  background: url(/imges/r16.png) center;
+  background-size: cover;
+}
+
+main .row .ras16:hover {
+  transition: 0.5s;
+  background-size: 110%;
+}
+
+main .row .col1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5px 0;
+  height: 200px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main .row .col1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: background-color 0.5s;
+}
+
+main .row .col1:hover::after {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+main .row .col1 .col--top h5 {
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+main .row .col1 .col--bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .row .col1 .col--bottom h6 {
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+main .row .col1 .col--bottom h6 i {
+  font-size: 22px;
+  padding-right: 5px;
+}
+
+main .row .col1 .col--bottom button {
+  width: 135px;
+  height: 25px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  background: linear-gradient(green, red);
+  border: none;
+  border-radius: 15px 0px 15px 0px;
+}
